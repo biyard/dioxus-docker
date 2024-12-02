@@ -21,8 +21,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t biyard/dioxus-docker:latest .
+          make build
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push biyard/dioxus-docker:latest
+          make push
